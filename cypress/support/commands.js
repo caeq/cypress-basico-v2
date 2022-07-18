@@ -32,6 +32,9 @@ Cypress.Commands.add('fillMandatoryFieldsAndSubmit', function(){
 })
 
 Cypress.Commands.add('validationSucess', function(){
-
   cy.get('.success').should('be.visible')
+})
+
+Cypress.Commands.add('validationError', function(){
+  cy.get('.error').should('not.be.visible')
 })
